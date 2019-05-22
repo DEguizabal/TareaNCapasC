@@ -27,6 +27,7 @@ th, td {
 					<th>Autor</th>
 					<th>Genero</th>
 					<th>ISBN</th>
+					<th>Cantidad</th>
 				<tr>
 			</thead>
 			<tbody>
@@ -36,6 +37,7 @@ th, td {
 						<td>${c.sautor}</td>
 						<td>${c.sgenero}</td>
 						<td>${c.bisbn}</td>
+						<td>${c.cantidad}</td>
 					</tr>
 				</c:forEach>
 			</tbody>

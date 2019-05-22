@@ -30,6 +30,10 @@
 				<td><b>ISBN: </b></td>
 				<td>${cliente.bisbn}</td>
 			</tr>
+			<tr>
+				<td><b>CANTIDAD </b></td>
+				<td>${cliente.cantidad}</td>
+			</tr>
 		</table>
 </body>
 </html>

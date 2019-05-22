@@ -36,6 +36,9 @@ public class Cliente {
 	
 	@Column(name = "isbn")
 	private String bisbn;
+	
+	@Column(name = "cantidad")
+	private int cantidad;
 
 	public String getidLibro() {
 		return idLibro;
@@ -75,6 +78,14 @@ public class Cliente {
 
 	public void setBisbn(String bisbn) {
 		this.bisbn = bisbn;
+	}
+	
+	public int getCantidad() {
+		return cantidad;
+	}
+
+	public void setCantidad(int cantidad) {
+		this.cantidad = cantidad;
 	}
 
 }
