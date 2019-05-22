@@ -35,6 +35,8 @@ public class ClienteController {
 	public ModelAndView verTodos() {
 		ModelAndView mav = new ModelAndView();
 		List<Cliente> clientes = clienteService.findAll();
+		String Encabezado = "Hay " +Integer.toString(clientes.size())+" libros en existencia, "+" de "+Integer.toString(clienteService.autoresDistintos())+ " cantidad de autores diferentes";
+		mav.addObject("Encabezado", Encabezado);
 		mav.addObject("clientes", clientes);
 		mav.setViewName("cliente/clientes");
 		

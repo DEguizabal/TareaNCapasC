@@ -27,5 +27,8 @@ public class ClienteServiceImpl implements ClienteService {
 			return clienteDao.findBy(filtro,codigo);	
 	}
 	
-
+	public int autoresDistintos() {
+		return clienteDao.autoresDistintos();
+	}
+	
 }

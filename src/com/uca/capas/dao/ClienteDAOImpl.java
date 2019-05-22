@@ -44,7 +44,15 @@ public class ClienteDAOImpl implements ClienteDAO {
 				List<Cliente> c = query.getResultList();
 				return c;
 	}
-
+	
+	@Override
+	public int autoresDistintos()  throws DataAccessException{
+		StringBuffer sb = new StringBuffer();
+		sb.append("select count(distinct autor) from public.book");	
+		Query query = entityManager.createNativeQuery(sb.toString());
+		int autoresDistintos = ((Number) query.getSingleResult()).intValue();
+		return autoresDistintos;
+	}
 
 
 }

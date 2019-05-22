@@ -12,6 +12,6 @@ public interface ClienteDAO {
 			
 	public List<Cliente> findBy(String filtro, String cadena) throws DataAccessException;
 	
-	
+	public int autoresDistintos()  throws DataAccessException;
 
 }

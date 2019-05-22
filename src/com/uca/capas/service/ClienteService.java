@@ -12,5 +12,6 @@ public interface ClienteService {
 		
 	public List<Cliente> findBy(String filtro,String codigo);
 	
+	public int autoresDistintos();
 
 }
